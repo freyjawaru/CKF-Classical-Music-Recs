@@ -11,7 +11,7 @@ CKF's Classical Music Recordings Recommendations
 CKF's Classical Music Recordings Recommendations is an Airtable and React build from which the user can take advantage of CKF's comprehensive understanding of the base information, and also add recordings. The user can navigate to a second page from the homepage to add a recording in From the homepage, the user is able to navigate to and click on an icon that leads to a corresponding page populated with film, television or sporting-event reviews. Each respective page will lead to a feed of past reviews and a form to create new reviews. Each review will be deletable.
 
 
-##Wireframes
+## Wireframes
 
 Page 1 (landing page, home page)
 ![Wireframe](./assets/pageOne.png)
@@ -23,9 +23,9 @@ Page 3 (input page for users)
 ![Wireframe](./assets/pageThree.png)
 
 
-##Component Hierarchy
+## Component Hierarchy
 
-![Drawing](./assets/hierarchy.png)
+![Drawing](./assets/hierarchy2.jpg)
 Form
 Page 2
 Home
@@ -84,7 +84,7 @@ EXAMPLE RESPONSE
 }
 
 
-##MVP/PostMVP
+## MVP/PostMVP
 
 The dataset has fifteen columns. That makes things a bit complicated. However, as far as input from a user is concerned, I think six input items is sufficient (composer, an artist, a label, an orchestra, for example).
 
@@ -135,7 +135,7 @@ Allow user to choose favorites, or rate recordings.
 |                             |          |                |               |             |
 
 
-##SWOT Analysis
+## SWOT Analysis
 
 Strengths:
 Weaknesses:
