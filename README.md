@@ -1,37 +1,31 @@
 # ckfrecs
-##Project Overview
+## Project Overview
 
 The purpose of this project is to offer a comprehensive database of recommendations of classical music recordings throughout the 20th century (and some of the 21st), from Christopher K. Feltham. Christopher K. Feltham is a veritable encyclopedia on the subject and graciously sat down to provide the first 100 or so recordings for this project.
 
-##Project Name
+## Project Name
 CKF's Classical Music Recordings Recommendations
 
-##Project Description
+## Project Description
 
-CKF's Classical Music Recordings Recommendations is an Airtable and React build from which the user can take advantage of CKF's comprehensive understanding of the base information, and also add recordings. The user can navigate to a second page from the homepage to add a recording in From the homepage, the user is able to navigate to and click on an icon that leads to a corresponding page populated with film, television or sporting-event reviews. Each respective page will lead to a feed of past reviews and a form to create new reviews. Each review will be deletable.
-
+CKF's Classical Music Recordings Recommendations is an Airtable and React build from which the user can take advantage of CKF's comprehensive understanding of the base information, and also add recordings. The user can navigate to a second page from the homepage to see the main content, and then from there navigate to a third page to add their own content. They can also navigate directly to the third page to add content from the home page. The home page acts as a landing page and a description. The second page acts as an index page.
 
 ## Wireframes
 
 Page 1 (landing page, home page)
-![Wireframe](./assets/pageOne.png)
+![Wireframe](./assets/landing.png)
 
 Page 2 (table with existing information)
-![Wireframe](./assets/pageTwo.png)
+![Wireframe](./assets/homePage.png)
 
 Page 3 (input page for users)
-![Wireframe](./assets/pageThree.png)
+![Wireframe](./assets/thirdPage.png)
 
 
 ## Component Hierarchy
 
-![Drawing](./assets/hierarchy2.jpg)
-Form
-Page 2
-Home
-Page 3
-Nav
-Buttons
+![Drawing](./assets/hierarchy4.png)
+
 
 The reasoning for this is thus:
 The form may be the most complicated because these objects are complicated with the numbers of fields they (necessarily) have.
@@ -42,6 +36,7 @@ Page 2 is the page navigated to, from the landing page, that shows the existing 
 https://airtable.com/tblWcF11IWSxhrJas/viwKHkxO68t4pcJYP?blocks=hide
 
 EXAMPLE RESPONSE
+```javascript
 {
     "records": [
         {
@@ -82,6 +77,7 @@ EXAMPLE RESPONSE
     ],
     "offset": "recvoERX2OD5HOtAQ"
 }
+```
 
 
 ## MVP/PostMVP
@@ -98,21 +94,21 @@ Use local storage to save user favorites.
 Allow user to choose favorites, or rate recordings.
 
 
-##Day	Deliverable	Status
+## Day	Deliverable	Status
 | Day          | task                                           | Hours | Hours completed | Hours total |   |
 |--------------|------------------------------------------------|-------|-----------------|-------------|---|
 | Weds Jan 19  | Proposal pitch, work with airtable and README  | 6     |                 |             |   |
 | Thurs Jan 20 | Component creation                             | 6     |                 |             |   |
-| Fri Jan 21   | Get set delete data, functioning of components | 6     |                 |             |   |
+| Fri Jan 21   | Data setup, functioning of components          | 6     |                 |             |   |
 | Sat Jan 22   | Css and layout                                 | 6     |                 |             |   |
 | Sun Jan 23   | Css and layout                                 | 6     |                 |             |   |
 | Mon Jan 24   | Css and layout, poss. post-MVP                 | 6     |                 |             |   |
-| Tue Jan 25   | Post MVP and testing                           | 6     |                 |             |   |
+| Tue Jan 25   | Post MVP                                       | 6     |                 |             |   |
 | Wed Jan 26   | Final work, Deployment                         | 6     |                 |             |   |
 | Thu Jan 27   | Presentations                                  | 3     |                 |             |   |
 
 
-##Timeframes
+## Timeframes
 | Component                   | Priority | Estimated time | Time invested | Actual time |
 |-----------------------------|----------|----------------|---------------|-------------|
 | Proposal                    | 1        | 6              | 7             |             |
@@ -121,7 +117,6 @@ Allow user to choose favorites, or rate recordings.
 | Data population home        | 3        | 1              |               |             |
 | Data population page 2      | 3        | 3              |               |             |
 | Data population page 3      | 3        | 3              |               |             |
-| Form page 2                 | 4        | 3              |               |             |
 | Form page 3                 | 4        | 3              |               |             |
 | Data creation/update page 1 | 5        | 3              |               |             |
 | Data creation/update page 2 | 5        | 3              |               |             |
@@ -137,7 +132,10 @@ Allow user to choose favorites, or rate recordings.
 
 ## SWOT Analysis
 
-Strengths:
-Weaknesses:
-Opportunities:
-Threats:
+Strengths: I feel comfortable with this kind of data from my long experience of having cataloged with it in a library setting. I feel comfortable enough getting data from an airtable and working with it.
+
+Weaknesses: There are a LOT of different kinds of data for this, and I may need to condense the columns or rework them.
+
+Opportunities: The opportunities are numerous for the different kinds of data that can be added in terms of links and sound files, and maybe even videos!
+
+Threats: I am not yet threatened by outside invaders.
