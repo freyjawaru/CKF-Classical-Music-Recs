@@ -21,6 +21,9 @@ Page 2 (table with existing information)
 Page 3 (input page for users)
 ![Wireframe](./assets/thirdPage.png)
 
+Mobile wireframes
+![Wireframe](./assets/mobileWireframes.png)
+
 
 ## Component Hierarchy
 
