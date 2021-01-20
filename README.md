@@ -16,13 +16,13 @@ Page 1 (landing page, home page)
 ![Wireframe](./assets/landing.png)
 
 Page 2 (table with existing information)
-![Wireframe](./assets/homePage.png)
+![Wireframe](./assets/mainPageindex.png)
 
 Page 3 (input page for users)
 ![Wireframe](./assets/thirdPage.png)
 
 Mobile wireframes
-![Wireframe](./assets/mobileWireframes.png)
+![Wireframe](./assets/mobile.png)
 
 
 ## Component Hierarchy
@@ -40,15 +40,19 @@ https://airtable.com/tblWcF11IWSxhrJas/viwKHkxO68t4pcJYP?blocks=hide
 
 EXAMPLE RESPONSE
 ```javascript
+EXAMPLE REQUEST
+curl "https://api.airtable.com/v0/appJI9UFGFEJr0WHk/Recordings?maxRecords=3&view=Grid%20view" \
+  -H "Authorization: Bearer YOUR_API_KEY"
+EXAMPLE RESPONSE
 {
     "records": [
         {
             "id": "recOzVBe66S30STI5",
             "fields": {
                 "composer": "Bach",
-                "work 1": "Cello Suites, complete\n",
-                "soloist a": "Gendron, Maurice\n",
-                "soloist a instrument": "Cello",
+                "work1": "Cello Suites, complete\n",
+                "soloistA": "Gendron, Maurice\n",
+                "soloistAInstrument": "Cello",
                 "label": "Philips"
             },
             "createdTime": "2021-01-19T22:18:19.000Z"
@@ -57,9 +61,9 @@ EXAMPLE RESPONSE
             "id": "rec8QbgKJqhR6tfZJ",
             "fields": {
                 "composer": "Bach",
-                "work 1": "French Suites\n",
-                "soloist a": "Schiff\n",
-                "soloist a instrument": "Klav.",
+                "work1": "French Suites\n",
+                "soloistA": "Schiff\n",
+                "soloistAInstrument": "Klav.",
                 "label": "London Decca"
             },
             "createdTime": "2021-01-19T22:18:19.000Z"
@@ -68,11 +72,11 @@ EXAMPLE RESPONSE
             "id": "recvoERX2OD5HOtAQ",
             "fields": {
                 "composer": "Bach",
-                "work 1": "Italienisches Konzert\n",
-                "work 2": "Bach/Busoni transcriptions\n",
-                "work 3": "Chromatisches Fantasie",
-                "soloist a": "Brendel, Alfred\n",
-                "soloist a instrument": "Klav.",
+                "work1": "Italienisches Konzert\n",
+                "work2": "Bach/Busoni transcriptions\n",
+                "work3": "Chromatisches Fantasie",
+                "soloistA": "Brendel, Alfred\n",
+                "soloistAInstrument": "Klav.",
                 "label": "Philips"
             },
             "createdTime": "2021-01-19T22:18:19.000Z"
@@ -80,6 +84,7 @@ EXAMPLE RESPONSE
     ],
     "offset": "recvoERX2OD5HOtAQ"
 }
+
 ```
 
 
