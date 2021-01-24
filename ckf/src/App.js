@@ -2,14 +2,14 @@ import { useEffect, useState } from "react";
 import { Link, Route } from "react-router-dom";
 import axios from "axios";
 import { baseURL, config } from "./services";
-// import Recording from "./components/Recording";
 import Form from "./components/Form";
 import Nav from "./components/Nav";
 import Main from "./components/Main";
 import Typeahead from "./components/Typeahead";
 import Recording from "./components/Recording";
 import "./App.css";
-import Dropdown from "react-bootstrap/Dropdown";
+import { propTypes } from "react-bootstrap/esm/Image";
+
 
 
 
@@ -36,7 +36,12 @@ function App() {
       <Nav />
 
       <Route exact path="/">
-      <Typeahead source={recordings} />
+        <Main
+        recordings={recordings}>
+
+
+        </Main>
+      {/* <Typeahead source={recordings} /> */}
         
       </Route>
       <Route path="/new">

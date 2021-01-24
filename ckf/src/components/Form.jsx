@@ -1,23 +1,27 @@
 import { useState } from "react";
 import axios from "axios";
 import { baseURL, config } from "../services";
+import { useHistory } from "react-router-dom";
+
 function Form(props) {
   const [work, setWork] = useState("");
-
   const [composer, setComposer] = useState("");
+const history = useHistory()
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     // make a creature object
     // creature object have all the properties from state
     const fields = {
-      work,
-      composer,
+      composer: composer,
+      work1: work,
     };
     // axios call to POST the new creature
     await axios.post(baseURL, { fields }, config);
     // toggling our GET request
     console.log("success!");
     props.setToggleFetch((prev) => !prev);
+    history.push("/")
   };
   return (
     <form onSubmit={handleSubmit}>
@@ -42,3 +46,7 @@ function Form(props) {
   );
 }
 export default Form;
+
+
+
+

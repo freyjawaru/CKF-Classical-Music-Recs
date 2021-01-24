@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 
 function Recording(props) {
   const params = useParams();
+  console.log(params)
   const recording = props.recordings.find(
     (recording) => recording.id === params.id
   );
