@@ -6,14 +6,21 @@ import { baseURL, config } from "./services";
 import Form from "./components/Form";
 import Nav from "./components/Nav";
 import Main from "./components/Main";
+import Typeahead from "./components/Typeahead";
+import Recording from "./components/Recording";
 import "./App.css";
 import Dropdown from "react-bootstrap/Dropdown";
 
+
+
 function App() {
   // one state for creatures
+  
   const [recordings, setRecordings] = useState([]);
   // one state for toggle
   const [toggleFetch, setToggleFetch] = useState(false);
+  
+  
   // get data from api when toggle changes
   useEffect(() => {
     const getRecordings = async () => {
@@ -29,30 +36,17 @@ function App() {
       <Nav />
 
       <Route exact path="/">
-        <form>
-          <label for="composers">Choose a composer:</label>
-          <select name="composers" id="composers">
-            {new Set(recordings).map((recording) => (
-                <option value="composer">
-             
-                {/* //dropdown code from https://www.w3schools.com/tags/tag_select.asp */}
-
-                  {recording.fields.composer}
-            
-                </option>
-            ))}
-          </select>
-          <input type="submit" value="Submit" />
-        </form>
+      <Typeahead source={recordings} />
+        
       </Route>
       <Route path="/new">
         <Form setToggleFetch={setToggleFetch} />
       </Route>
-
-      {/* <Route path="/recording/:id">
+      <Route path="/recordings/:id">
         <Recording recordings={recordings} />
-      </Route> */}
-    </div>
+      </Route>
+      </div>
+    
   );
 }
 export default App;

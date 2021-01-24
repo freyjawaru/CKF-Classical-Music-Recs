@@ -2,17 +2,16 @@ import { useState } from "react";
 import axios from "axios";
 import { baseURL, config } from "../services";
 function Form(props) {
-  const [name, setName] = useState("");
-  const [rating, setRating] = useState(1);
-  const [author, setAuthor] = useState("Anonymous");
+  const [work, setWork] = useState("");
+
+  const [composer, setComposer] = useState("");
   const handleSubmit = async (e) => {
     e.preventDefault();
     // make a creature object
     // creature object have all the properties from state
     const fields = {
-      name,
-      rating,
-      author,
+      work,
+      composer,
     };
     // axios call to POST the new creature
     await axios.post(baseURL, { fields }, config);
@@ -23,28 +22,20 @@ function Form(props) {
   return (
     <form onSubmit={handleSubmit}>
       <h4>Enter a new recording</h4>
-      <label htmlFor="name">Name:</label>
+      <label htmlFor="work">Work:</label>
       <input
-        name="name"
+        work="work"
         type="text"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
+        value={work}
+        onChange={(e) => setWork(e.target.value)}
       />
-      <label htmlFor="rating">Rating:</label>
+      
+      <label htmlFor="composer">Composer:</label>
       <input
-        name="rating"
-        type="number"
-        min="1"
-        max="5"
-        value={rating}
-        onChange={(e) => setRating(e.target.valueAsNumber)}
-      />
-      <label htmlFor="author">Author:</label>
-      <input
-        name="author"
+        composer="composer"
         type="text"
-        value={author}
-        onChange={(e) => setAuthor(e.target.value)}
+        value={composer}
+        onChange={(e) => setComposer(e.target.value)}
       />
       <button type="submit">Submit</button>
     </form>

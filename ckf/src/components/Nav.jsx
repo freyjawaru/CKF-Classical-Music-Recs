@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
+// import Recording from "./components/Recording";
+
 function Nav(props) {
   return (
     <nav>
       <Link to="/">Home</Link>
-      <Link to="/new">Do The Thing</Link>
+      <Link to="/new">Fill in a new recording</Link>
+      {/* <Route path="./components/Recording" component={Recording} />Third page</Link> */}
     </nav>
   );
 }
