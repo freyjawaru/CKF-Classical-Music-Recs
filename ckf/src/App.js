@@ -2,13 +2,13 @@ import { useEffect, useState } from "react";
 import { Link, Route } from "react-router-dom";
 import axios from "axios";
 import { baseURL, config } from "./services";
-import Form from "./components/Form";
+import Form from "./components/Form/Form";
 import Nav from "./components/Nav";
-import Main from "./components/Main";
-import Typeahead from "./components/Typeahead";
+import Main from "./components/Main/Main";
+import Typeahead from "./components/Typeahead/Typeahead";
 import Recording from "./components/Recording";
 import "./App.css";
-import { propTypes } from "react-bootstrap/esm/Image";
+// import { propTypes } from "react-bootstrap/esm/Image";
 
 
 

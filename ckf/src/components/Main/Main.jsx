@@ -1,7 +1,8 @@
 import { useState } from "react";
 // import Show from "./Components/Show.jsx";
 import { Link } from "react-router-dom";
-import Typeahead from "./Typeahead";
+import Typeahead from "../Typeahead/Typeahead";
+import "./Main.css";
 
 function Home(props) {
   console.log(props)

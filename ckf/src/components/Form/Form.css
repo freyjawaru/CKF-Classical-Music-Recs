@@ -1,0 +1,41 @@
+form {
+  display: grid;
+}
+
+
+
+form label,
+form input,
+form button {
+  margin: 5px 0;
+  font-family: 'Libre Baskerville', serif;
+  width: 40vw;
+  box-sizing: border-box;
+  
+}
+form input:focus,
+form button:focus {
+  outline: 1px solid #FFE6A7;
+}
+form h4 {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  color: #FFE6A7;
+}
+form label {
+  color:#FFE6A7;
+  font-weight: 600;
+  text-shadow: 3px 3px 6px sandybrown;
+}
+form input,
+form button {
+  font-weight: 600;
+  background-color: #FFE6A7;
+  color: #432818;
+  transition: all 0.2s;
+  justify-content: center;
+}
+form button:hover {
+  color: #432818;
+  background-color: #BB9457;
+}

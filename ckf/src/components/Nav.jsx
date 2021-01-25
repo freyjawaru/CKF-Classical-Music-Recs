@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-// import Recording from "./components/Recording";
 
 function Nav(props) {
   return (

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import "./Typeahead.css";
 
 
 
@@ -26,8 +27,8 @@ function Typeahead(props) {
     item.fields[category] && item.fields[category].toString().toLowerCase().includes(name.toLowerCase())
   );
   console.log(filteredItems)
-  const categories = ["composer", "soloistA", "soloistB"];
-    
+  const categories = ["composer", "work1", "work2", "work3", "conductor", "performingGroupA", "performingGroupB", "soloistA", "soloistAInstrument", "soloistB", "soloistBInstrument", "soloistC", "soloistCInstrument", "label", "year", "notes"];
+
   
   
   return (
