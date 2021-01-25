@@ -32,4 +32,27 @@
   text-decoration: none;
   display: flex;
   flex-direction: column;
+  background-color: #FFE6A7;
+  padding: auto;
+}
+
+.show-container a {
+
+  text-decoration: none;
+  color: #432818;
+  
+}
+
+select {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 14px;
+  font-weight: 900;
+  background-color: #FFE6A7;
+  color: #432818;
+  width: 40vw;
+  box-sizing: border-box;
+
 }

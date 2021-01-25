@@ -6,6 +6,7 @@ main a {
   font-size: 24px;
   font-weight: 900;
   color: #FFE6A7;
+  text-decoration: none;
 }
 main a:hover {
   border-bottom: 1px solid #FFE6A7;

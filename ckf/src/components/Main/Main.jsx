@@ -13,10 +13,6 @@ function Home(props) {
 </Typeahead>
         </div>   
         
-   
-
-       
-
   )
 
 }
