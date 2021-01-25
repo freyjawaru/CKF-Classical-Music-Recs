@@ -44,6 +44,9 @@ function Recording(props) {
         <em>{recording.fields.work3}</em>
       </h5>
       <p>
+        {recording.fields.conductor}
+      </p>
+      <p>
         {recording.fields.soloistA}
       </p>
       <p>
