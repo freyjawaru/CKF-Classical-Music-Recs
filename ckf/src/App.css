@@ -1,31 +1,26 @@
 body {
-  
-  background-color: #6F1D1B;
-  color: #FFE6A7;
-  font-family: 'Libre Baskerville', serif;
+  background-color: #6f1d1b;
+  color: #ffe6a7;
+  font-family: "Libre Baskerville", serif;
   border: solid, 4px;
   border-color: #432818;
 }
- 
+
 img {
   width: 600px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   top: auto;
+  box-sizing: border-box;
 }
 
-
-.p{
-  font-family: 'Libre Baskerville', serif;
+.p {
+  font-family: "Libre Baskerville", serif;
   font-weight: bold;
   font-size: 20px;
   color: black;
-  
-
 }
-
-  
 
 nav {
   display: flex;
@@ -37,78 +32,67 @@ nav {
   border-bottom: 1px solid #432818;
 }
 nav a {
-
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: all 0.2s;
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 24px;
   font-weight: 900;
-  color: #FFE6A7;
+  color: #ffe6a7;
   padding-right: 20px;
 }
 
 nav a:hover {
-  border-bottom: 1px solid #FFE6A7;
-
+  border-bottom: 1px solid #ffe6a7;
 }
 
-
-
-@media only screen and (min-width: 440px) and (max-width: 1024px)  {
+@media only screen and (min-width: 440px) and (max-width: 1024px) {
   body {
-    background-color: #99582A;
-    color: #6F1D1B;
+    background-color: #99582a;
+    color: #ffe6a7;
   }
   input {
-    background-color:  #6F1D1B;
-    color: #FFE6A7;
+    background-color: #6f1d1b;
+    color: #ffe6a7;
   }
-  nav a{
+  nav a {
     font-size: 22px;
     flex-direction: row;
     flex-wrap: wrap-reverse;
     padding-right: 18px;
-    }
-  
+  }
 }
 
 @media only screen and (max-width: 440px) {
+  body {
+    background-color: #bb9457;
+    font-family: "Libre Baskerville", serif;
+    font-size: 20px;
+    /* border-right: padding 10px; */
+  }
+  nav {
+    align-items: flex-end;
+  }
+  img {
+    width: 300px;
+  }
 
-body {
-  background-color:#BB9457;
-  font-family: 'Libre Baskerville', serif;
-  font-size: 20px;
-  border-right: padding 10px;
-
+  .show-container {
+    font-family: "Libre Baskerville", serif;
+    font-size: 16px;
+    color: #ffe6a7;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffe6a7;
+    width: fit-content;
+    height: 300px;
+    overflow-y: auto;
+  }
+  nav a {
+    font-size: 16px;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    padding-right: 18px;
+  }
 }
-nav {
-
-  align-items: flex-end;
-}
-img {
-  width: 300px;
-}
-
-.show-container {
-  font-family: 'Libre Baskerville', serif;
-  font-size: 16px;
-  color: #432818;
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  background-color: #FFE6A7;
-  width: fit-content;
-  height: 300px;
-  overflow-y: auto;
-
-}
-nav a{
-font-size: 16px;
-flex-direction: row;
-flex-wrap: wrap-reverse;
-padding-right: 18px;
-}
-}
-
-
