@@ -66,6 +66,35 @@ nav a:hover {
   
 }
 
+@media only screen and (max-width: 440px) {
 
+body {
+  background-color:#BB9457;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 20px;
+
+}
+nav {
+
+  align-items: flex-end;
+}
+img {
+  width: 300px;
+}
+
+.show-container {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 16px;
+  color: #432818;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFE6A7;
+  width: fit-content;
+  height: 300px;
+  overflow-y: auto;
+
+}
+}
 
 
