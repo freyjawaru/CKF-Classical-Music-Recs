@@ -1,27 +1,27 @@
 import { useEffect, useState } from "react";
-import { Link, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 import axios from "axios";
 import { baseURL, config } from "./services";
 import Form from "./components/Form/Form";
 import Nav from "./components/Nav";
 import Main from "./components/Main/Main";
-import Typeahead from "./components/Typeahead/Typeahead";
 import Recording from "./components/Recording";
 import "./App.css";
-// import { propTypes } from "react-bootstrap/esm/Image";
+
 
 
 
 
 function App() {
-  // one state for creatures
+
   
   const [recordings, setRecordings] = useState([]);
-  // one state for toggle
+  const [recording, setRecording] = useState([]);
+
   const [toggleFetch, setToggleFetch] = useState(false);
   
   
-  // get data from api when toggle changes
+
   useEffect(() => {
     const getRecordings = async () => {
       const resp = await axios.get(baseURL, config);
@@ -41,7 +41,7 @@ function App() {
 
 
         </Main>
-      {/* <Typeahead source={recordings} /> */}
+      
         
       </Route>
       <Route path="/new">

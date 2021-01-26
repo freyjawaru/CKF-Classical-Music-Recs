@@ -25,17 +25,7 @@ img {
 
 }
 
-.home {
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 100%;
-
-  /* justify-content: space-around, flex-end; */
-  font-size: 16px;
-  color: black;
-}
+  
 
 nav {
   display: flex;
@@ -62,6 +52,19 @@ nav a:hover {
 }
 
 
+
+@media only screen and (min-width: 440px) and (max-width: 1024px)  {
+  body {
+    background-color: #99582A;
+    color: #6F1D1B;
+  }
+  input {
+    background-color:  #6F1D1B;
+    color: #FFE6A7;
+  }
+
+  
+}
 
 
 

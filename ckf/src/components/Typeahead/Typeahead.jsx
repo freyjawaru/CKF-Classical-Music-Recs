@@ -13,7 +13,7 @@ function Typeahead(props) {
   useEffect(() => {
     const lastCategory = localStorage.getItem("category") || "composer";
     setCategory(lastCategory);
-    setName("" || localStorage.getItem(lastCategory));
+    setName( localStorage.getItem(lastCategory) ||"" );
   }, []);
   useEffect(() => {
     localStorage.setItem(category, name);

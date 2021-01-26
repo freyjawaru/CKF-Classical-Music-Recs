@@ -90,7 +90,7 @@ const history = useHistory()
         conductor="Conductor"
         type="text"
         value={conductor}
-        onChange={(e) => setWork1(e.target.value)}
+        onChange={(e) => setConductor(e.target.value)}
       />
       <label htmlFor="Soloist A">Soloist A:</label>
       <input

@@ -1,6 +1,4 @@
-import { useState } from "react";
-// import Show from "./Components/Show.jsx";
-import { Link } from "react-router-dom";
+
 import Typeahead from "../Typeahead/Typeahead";
 import "./Main.css";
 
