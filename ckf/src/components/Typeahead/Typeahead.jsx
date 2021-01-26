@@ -16,7 +16,7 @@ function Typeahead(props) {
     setName( localStorage.getItem(lastCategory) ||"" );
   }, []);
   useEffect(() => {
-    localStorage.setItem(category, name);
+    localStorage.setItem("name", name);
     localStorage.setItem("category", category);
   }, [name, category]);
   // all items in source array (from props) where the name partially matches the name state
