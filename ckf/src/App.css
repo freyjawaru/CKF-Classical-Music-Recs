@@ -29,6 +29,7 @@ img {
 
 nav {
   display: flex;
+  align-items: space-between;
   padding: 5px;
   width: 100vw;
   box-sizing: border-box;
@@ -44,6 +45,7 @@ nav a {
   font-size: 24px;
   font-weight: 900;
   color: #FFE6A7;
+  padding-right: 20px;
 }
 
 nav a:hover {
@@ -62,7 +64,12 @@ nav a:hover {
     background-color:  #6F1D1B;
     color: #FFE6A7;
   }
-
+  nav a{
+    font-size: 22px;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    padding-right: 18px;
+    }
   
 }
 
@@ -94,6 +101,12 @@ img {
   height: 300px;
   overflow-y: auto;
 
+}
+nav a{
+font-size: 16px;
+flex-direction: row;
+flex-wrap: wrap-reverse;
+padding-right: 8px;
 }
 }
 
