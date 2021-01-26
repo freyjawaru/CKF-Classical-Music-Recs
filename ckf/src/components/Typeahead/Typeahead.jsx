@@ -50,6 +50,7 @@ function Typeahead(props) {
 
   return (
     <form className="typeahead">
+      <h4>Search for a recording</h4>
       <input value={name} onChange={(e) => setName(e.target.value)} />
       <select value={category} onChange={(e) => setCategory(e.target.value)}>
         {categories.map((cat) => (
